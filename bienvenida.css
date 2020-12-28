@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+html{
+    background: #e53935;
+    background: linear-gradient(to left, #1a7fc2 , #818080);}
+.contenedor {
+    display: flex;
+     flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+}
+#header{
+    margin: 2px;
+    padding: 4px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+
+    
+}
+#formulario{
+    background-color: #aca9a960;
+    margin: 0px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 7px;
+    box-shadow: 0px 1px 50px rgba(0, 0, 0,.5);
+    align-items: center;
+    transition: all ease 1000ms;
+    
+
+}
+#formulario:hover{
+    box-shadow: 0px 1px 50px rgba(0, 0, 0,.9);
+
+}
+#nombre-usuario{
+    padding: 8px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+
+    
+}
+
+#edad-usuario{
+    padding: 8px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+}
+
+#ingresar{
+    display: inline-block; 
+	padding: 5px 12px;
+	color: white;
+	vertical-align: middle;
+	font-family: 'Rubik One', sans-serif;
+	text-decoration: none;
+	font-size: 2.4vw;
+    background-color: #3498db;
+    transition: all ease 1000ms;
+    position: relative;
+    top: 20px;
+
+}
+#ingresar:hover{
+    background-color: #004e9c;
+    box-shadow: 0px 1px 50px rgba(0, 0, 0,.4);
+
+}
+
+#footer{
+    margin: 12px;
+    padding: 14px;
+    font-size: 15px;
+    border: solid 3px rgb(27, 27, 27);  
+    border-radius: 7px;
+    box-shadow: 5px 10px 50px rgba(0, 0, 0,.5);
+    bottom: 0px;  
+    position: fixed
+    
+    
+}
+#resultado{
+    position: relative;
+    bottom: 20px;
+    font-size: 47px;
+    font-weight: 700;
+    color: rgb(2, 2, 2);
+}
