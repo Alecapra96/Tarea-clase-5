@@ -1,0 +1,54 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+html{
+    background: #e53935;
+    background: linear-gradient(to left, #1a7fc2 , #818080);}
+.contenedor {
+    display: flex;
+     flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans', sans-serif;
+    align-items: center;
+}
+footer {
+    background: #050127;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    padding: 0px;
+    position: absolute;;
+    bottom:0;
+    border:2px solid black;
+    width: 1345px;
+    text-align: center
+    
+}
+header{
+    
+    font-size: 30px;
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+}
+#botonCalcular{
+    background-color: #818080;
+    border-radius: 4px;  
+    
+    cursor: pointer;
+    padding: 8px 16px;
+    position: relative;
+    bottom: -20px;
+    
+}
+#botonCalcular:hover{
+    background-color: #1a7fc2;
+}
+#results{
+   text-align: center;
+    font-size: 24px;
+    font-weight: 760;
+    visibility: hidden;
+    
+    
+  
+}
+
