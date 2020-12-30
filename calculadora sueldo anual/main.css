@@ -1,0 +1,66 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+.contenedor-titulo{
+    font-size: 27.5px; 
+    text-align: center;
+    line-height: 1;
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+    
+}
+.contenedor-resultados{
+    font-size: 18.5px; 
+    text-align: center;
+    line-height: 0;
+
+}
+.contenedor-botones{
+    font-size: 18.5px; 
+    text-align: center;
+    line-height: 2;
+    
+}
+
+#botonSueldo {
+    border: 1px solid #2f4a77ee; /*anchura, estilo y color borde*/
+    padding:9px; /*espacio alrededor texto*/
+    background-color: #2f4a77ee; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border: 2px solid black;
+
+
+        
+}
+#sueldoIngresado{
+    width: 20%;
+    padding: 9px 9px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: #2f4a77ee;
+    color: white;
+
+
+
+}
+body {
+    background: #EFEFEF;;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+footer {
+    background: #050127;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    padding: 0px;
+    position: absolute;;
+    bottom:0;
+    border:2px solid black;
+    width: 1345px;
+    text-align: center
+    
+}
+
