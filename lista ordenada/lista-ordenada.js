@@ -5,8 +5,8 @@
 // 2. obtener el número más pequeño y mostrarlo en un <em> pre-creado con el texto "El número más pequeño es..."
 // 3. obtener el número más grande y mostrarlo en un <em> pre-creado con el texto "El número más grande es..."
 // 4. obtener el número que más se repite y mostrarlo en un <em> pre-creado con el texto "El número más frecuente es..."
-let $botonCalcular = document.getElementById("botonCalcular");
-$botonCalcular.onclick = function ClickenCalcular(){
+let $botonCalcular = document.getElementById("boton-calcular");
+$botonCalcular.onclick = function determinarPromedios(){
 
 const lista = document.querySelectorAll('li');
 const array =[];
@@ -14,6 +14,29 @@ for(let i=0; i<lista.length; i++){
     array.push(Number(lista[i].innerText));
 }
 console.log(array);
+
+
+let promedioCalculado = promedio(array);
+let numeroMasChico = numeroMasPequeño(array);
+let numeroMasGrande = numeroMasGrandeFuncion(array);
+let numeroQueMasSeRepite = numeroMasRepite(array); 
+
+let resultado = document.querySelector('#resultado-promedio');
+resultado.textContent = "El promedio es "+promedioCalculado ;
+document.querySelector("#resultado-promedio").style.visibility = 'visible';
+
+let resultado1 = document.querySelector('#resultado-numero-chico');
+resultado1.textContent = "El numero mas pequeño es el "+numeroMasChico ;
+document.querySelector("#resultado-numero-chico").style.visibility = 'visible';
+
+let resultado2 = document.querySelector('#resultado-numero-grande');
+resultado2.textContent = "El numero mas grande es el "+numeroMasGrande ;
+document.querySelector("#resultado-numero-grande").style.visibility = 'visible';
+
+let resultado3 = document.querySelector('#resultado-mas-repite');
+resultado3.textContent = "El numero que mas se repite es el "+numeroQueMasSeRepite ;
+document.querySelector("#resultado-mas-repite").style.visibility = 'visible';
+}
 
 function promedio (array){
     let sum=0;
@@ -23,33 +46,24 @@ function promedio (array){
     let promedioCalculado = sum / array.length;
     return promedioCalculado;
 }
-let promedioCalculado = promedio(array);
-
-
 function numeroMasPequeño(array){
-    let iViejo= array[0];
+    let numeroChico= array[0];
     for(let i=0; i<array.length;i++){ 
-        if (array[i] < iViejo){
-            iViejo= array[i];     
+        if (array[i] < numeroChico){
+            numeroChico= array[i];     
         }
     }
-    return iViejo
+    return numeroChico
 }
-let numeroMasChico = numeroMasPequeño(array);
-
-
-function numeroMasGrande(array){
-    let iViejo= array[0];
+function numeroMasGrandeFuncion(array){
+    let numeroGrande= array[0];
     for(let i=0; i<array.length;i++){ 
-        if (array[i] > iViejo){
-            iViejo= array[i];     
+        if (array[i] > numeroGrande){
+            numeroGrande= array[i];     
         }
     }
-return iViejo
+return numeroGrande
 }
-let numeroMasGrande1 = numeroMasGrande(array);
-
-
 function numeroMasRepite(array){
     let frecuente;
     let max=0;
@@ -66,22 +80,4 @@ function numeroMasRepite(array){
          }       
      }
      return frecuente;
-}
-let numeroQueMasSeRepite = numeroMasRepite(array); 
-
-let resultado0 = document.querySelector('#resultado0');
-resultado0.textContent = "El promedio es "+promedioCalculado ;
-document.querySelector("#resultado0").style.visibility = 'visible';
-
-let resultado1 = document.querySelector('#resultado1');
-resultado1.textContent = "El numero mas pequeño es el "+numeroMasChico ;
-document.querySelector("#resultado1").style.visibility = 'visible';
-
-let resultado2 = document.querySelector('#resultado2');
-resultado2.textContent = "El numero mas grande es el "+numeroMasGrande1 ;
-document.querySelector("#resultado2").style.visibility = 'visible';
-
-let resultado3 = document.querySelector('#resultado3');
-resultado3.textContent = "El numero que mas se repite es el "+numeroQueMasSeRepite ;
-document.querySelector("#resultado3").style.visibility = 'visible';
 }

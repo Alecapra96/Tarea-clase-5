@@ -4,16 +4,16 @@
 // en una caja de texto deshabilitada. --> <input type="text" disabled id="salario-mensual"/>
 
 
-let $botonSueldo = document.querySelector("#botonSueldo");
+let $botonSueldo = document.querySelector("#boton-sueldo");
 
 
 $botonSueldo.onclick = function(){
-    let sueldoIngresado = document.querySelector("#sueldoIngresado").value;
+    let sueldoIngresado = document.querySelector("#sueldo-ingresado").value;
     const months = 12 ;
     let sueldoCalculado = sueldoIngresado * months;
     document.querySelector("#resultado").innerText = "Tu sueldo anual es de $"+sueldoCalculado;
     const precioRutini=1000;
     let botellasRutini = parseInt(sueldoIngresado/precioRutini);
-    document.querySelector("#resultadoRutini").innerText = "Te puedes comprar "+botellasRutini+ " botellas de Rutini con tu sueldo mensual";
+    document.querySelector("#resultado-rutini").innerText = "Te puedes comprar "+botellasRutini+ " botellas de Rutini con tu sueldo mensual";
 
 }

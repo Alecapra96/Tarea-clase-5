@@ -1,6 +1,6 @@
-let $botonCalcular = document.getElementById("botonCalcular");
-$botonCalcular.addEventListener("click",ClickenCalcular);
-function ClickenCalcular(){
+let $botonCalcular = document.getElementById("boton-calcular");
+$botonCalcular.addEventListener("click",IngresoBar);
+function IngresoBar(){
     event.preventDefault(); //Esta linea nomas se agrega
 
     let $nombreUsuario= document.querySelector('#nombre-usuario').value;
@@ -18,7 +18,7 @@ function ClickenCalcular(){
         textoResultado= "Hola "+$nombreUsuario +", no puedes ingresar"
 
     }
-    document.querySelector("#resultado1").innerText=textoResultado;
+    document.querySelector("#resultado-ingreso-bar").innerText=textoResultado;
 
 }
 

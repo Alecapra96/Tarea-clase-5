@@ -48,7 +48,7 @@ footer{
     
     
 }
-#botonCalcular{
+#boton-calcular{
     background-color: #343A40;
     border-radius: 4px;  
     color: #fff;
@@ -58,7 +58,7 @@ footer{
     bottom: -20px;
     
 }
-#botonCalcular:hover{
+#boton-calcular:hover{
     background-color: #004e9c;
 }
 #resultado{

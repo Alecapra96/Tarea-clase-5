@@ -29,7 +29,7 @@ header{
     color: white;
     font-family: 'Didact Gothic', sans-serif;
 }
-#botonCalcular{
+#boton-calcular{
     background-color: #818080;
     border-radius: 4px;  
     
@@ -39,7 +39,7 @@ header{
     bottom: -20px;
     
 }
-#botonCalcular:hover{
+#boton-calcular:hover{
     background-color: #1a7fc2;
 }
 #results{
